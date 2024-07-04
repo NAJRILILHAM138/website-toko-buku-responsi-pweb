@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Book Haven</h1>
+    </header>
+    <section id="books">
+        <h2>Buku Yang Tersedia</h2>
+        <div class="book-list">
+        </div>
+    </section>
+    <section id="order-form">
+        <h2>Pesan Buku</h2>
+        <form id="orderForm" action="order.php" method="POST">
+            <label for="book-id">ID Buku:</label>
+            <input type="text" id="book-id" name="book_id" required>
+            <label for="customer-name">Nama Pelanggan:</label>
+            <input type="text" id="customer-name" name="customer_name" required>
+            <label for="book-title">Judul Buku:</label>
+            <input type="text" id="book-title" name="book_title" required>
+            <label for="book-author">Pengarang:</label>
+            <input type="text" id="book-author" name="book_author" required>
+            <button type="submit">Order</button>        
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
